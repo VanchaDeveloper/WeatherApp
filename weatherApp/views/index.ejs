@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="containe-fluid header">
+      <div class="container head">
+      <h1 class="heading">What's the weather like?</h1>
+    </div></div>
+    <div class="container formBlock">
+        <form action="/" method="post">
+          <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+          <input type="submit" class="ghost-button" value="Get Weather">
+        </form>
+          <% if(weather!== null){ %>
+            <div class="container weather">
+              <div class="weatherInfo">
+             <img class="icon" src="http://openweathermap.org/img/w/<%= weather.icon %>.png" alt="Image">
+            <span class="title"><%= weather.city %></span>
+            <div class="temp"><%= weather.temperature %>° F</div>
+              <p class="des"> <%= weather.description %>
+              </p>
+               <% } %>
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+          </div>      </div>
+        <% } %>
+
+</div></div>
+  </body>
+</html>

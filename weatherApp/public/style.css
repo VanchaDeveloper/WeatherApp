@@ -1,0 +1,82 @@
+.header {
+  padding: 50px 0px 50px 0px  ;
+  background-color: #00a572;
+  margin-left: -15px;
+  margin-right: -15px;
+
+}
+.heading {
+  color:white;
+   font-family: 'Muli', sans-serif;
+}
+input[type="text"] ,input[type="submit"]
+{
+  display: block;
+  padding: 10px 20px 8px 10px;
+  font-size: 16px;
+  vertical-align: middle;
+  border: 2px solid #00a572;
+  border-radius: 8px;
+  color:#00a572;
+  background-color: #ffffff;
+  width: 400px;
+  font-family: 'Muli', sans-serif;
+  margin: 30px auto;
+}
+input[type="submit"]
+{
+  background-color:#00a572;
+color: #ffffff;
+  width: 260px;
+  font-weight: bold;
+}
+input[type="submit"]:hover
+{
+color:#00a572;
+background-color: #ffffff;
+  width: 260px;
+  border: 2px solid #00a572;
+  transition: 0.5s;
+}
+.formBlock
+{
+  margin-top: 70px;
+}
+.icon{
+  width: 75px;
+  height: 75px;
+}
+.title{
+  font-size: 24px;
+}
+
+.weather{
+  color:#00a572;
+text-align: center;
+
+}
+.weatherInfo{
+  display: inline-block;
+  border: 2px solid #00a572;
+ box-shadow: 5px 5px #00a572;
+ padding: 20px 40px 20px 35px;
+
+}
+@media  (max-width:500px) {
+input[type="submit"]
+{
+  width: 150px;
+}
+input[type="text"]
+{
+  width: 260px;
+}
+input[type="submit"]:hover
+{
+  color:#00A572;
+  background-color: #ffffff;
+    width: 150px;
+    border: 2px solid #00a572;
+    transition: 0.5s;
+}
+}
